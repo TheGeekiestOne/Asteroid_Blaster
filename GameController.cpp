@@ -80,7 +80,7 @@ GameController::GameController(int windowNumber)
 
 	_initialAppearInterval = TIME_INITIAL_SCREEN_ALIVE;
 
-	_statistics.LivesCount = DEFAULT_LIVES_COUNT;
+	//_statistics.LivesCount = DEFAULT_LIVES_COUNT;
 	_statistics.CurrentLevel = 1;
 	_statistics.PointsEarned = 0;
 }

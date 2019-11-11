@@ -33,7 +33,8 @@ const int TIME_BULLETS_ALIVE = 1500;
 //how long the initail title screen lasts
 const int TIME_INITIAL_SCREEN_ALIVE = 4000;
 
-const int DEFAULT_LIVES_COUNT = 5;
+//starting lives for player - 
+//const int DEFAULT_LIVES_COUNT = 5;
 
 const std::string GAME_NAME = ( "ASTEROID BLASTER") ;
 const std::string GAME_AUTHOR = ("A Game Created by Ayran Olckers");
