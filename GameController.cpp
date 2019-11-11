@@ -279,7 +279,7 @@ void GameController::_SolveCollisions()
 
 		if (isHit)
 		{
-			_statistics.PointsEarned += 1;
+			_statistics.PointsEarned += 10;
 		}
 	}
 }
@@ -411,7 +411,8 @@ void GameController::Update()
 // Shows current statistic information.
 void GameController::_ShowStatistics()
 {
-	glColor3f(0.0, 1.0, 1.0);
+	glColor3f(1.0, 0.0, 0.0); //Score board colors//
+
 
 	std::ostringstream stringStream;
 	stringStream << POINTS_LABEL << _statistics.PointsEarned;
