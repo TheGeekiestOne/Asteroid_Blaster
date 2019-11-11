@@ -48,7 +48,8 @@ void Player::Draw()
 	if (_thrust)
 	{	//thruster properties 
 		glColor3f(1.0, 0.0, 0.0); //red
-		glBegin(GL_LINE_STRIP);
+		//glBegin(GL_LINE_STRIP);
+		glBegin(GL_TRIANGLES);
 		glVertex2f(-0.75, -0.5);
 		glVertex2f(-1.75, 0);
 		glVertex2f(-0.75, 0.5);
@@ -58,10 +59,18 @@ void Player::Draw()
 	glColor3f(1.0, 1.0, 0.0); //yellow
 
 	// TODO Use stipples.
-	glBegin(GL_LINE_LOOP);
-	glVertex2f(2.0, 0.0);
+	//glBegin(GL_LINE_LOOP);
+	//glVertex2f(2.0, 0.0);
+	//glVertex2f(-1.0, -1.0);
+	//glVertex2f(-0.5, 0.0);
+	//glVertex2f(-1.0, 1.0);
+	//glVertex2f(2.0, 0.0);
+	//glEnd();
+
+	glBegin(GL_TRIANGLES);
+	//glVertex2f(2.0, 0.0);
 	glVertex2f(-1.0, -1.0);
-	glVertex2f(-0.5, 0.0);
+	//glVertex2f(-0.5, 0.0);
 	glVertex2f(-1.0, 1.0);
 	glVertex2f(2.0, 0.0);
 	glEnd();
@@ -77,6 +86,8 @@ void Player::Draw()
 }
 
 // physics of ship
+// help for this book:: https://www.oreilly.com/library/view/learning-game-physics/9781783281879/
+//
 void Player::Update(int time, int delta)
 {
 	if (_left)
@@ -202,7 +213,7 @@ void Player::SpecialKeyUpPressed(int key)
 //gun fires on makeShot check
 void Player::MakeShot(int time)
 {
-	// TODO Check _currentWeapon
+	// TODO 
 
 	if (_BlasterGun != 0)
 	{
