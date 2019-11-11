@@ -104,6 +104,9 @@ void Player::Update(int time, int delta)
 	}
 	if (_thrust)
 	{
+		// Java code
+		/*double angleRadian = (s_y > 0) ? Math.acos(s_x) : -Math.acos(s_x);
+		double angleDegrees = angleRadian * 180 / Math.PI;*/
 
 		delta = time - _thrustTime;
 		_v = delta * 0.00004;
