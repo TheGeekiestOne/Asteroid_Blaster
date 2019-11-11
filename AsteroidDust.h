@@ -14,7 +14,7 @@
 #include "AsteroidObject.h"
 
 // 
-// 
+// class for the asteroid dust particles that fire in a circle after the asteroid is destroyed.
 // 
 class AsteroidDust : public AsteroidObject, public GraphicObject
 {

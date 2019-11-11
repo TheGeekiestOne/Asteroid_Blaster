@@ -9,7 +9,8 @@
 #include "Player.h"
 #include "Common.h"
 
-// 
+// Player logic and constants
+
 Player::Player()
 {
 	// Default weapon.
@@ -144,7 +145,8 @@ void Player::Update(int time, int delta)
 	}
 }
 
-// 
+// curretly not working properly....
+//this should reset the location of the ship to centre of the screen
 void Player::RestorePosition()
 {
 	_position.x = ORTHO_MAX / 2;
@@ -153,7 +155,7 @@ void Player::RestorePosition()
 	_position.yv = 0;
 }
 
-// 
+// add thrust to direction pressed
 void Player::SpecialKeyPressed(int key, int time)
 {
 	switch (key)
@@ -177,7 +179,7 @@ void Player::SpecialKeyPressed(int key, int time)
 	}
 }
 
-// 
+// turn off thrustand move ship to direction
 void Player::SpecialKeyUpPressed(int key)
 {
 	switch (key)
@@ -197,7 +199,7 @@ void Player::SpecialKeyUpPressed(int key)
 	}
 }
 
-//
+//gun fires on makeShot check
 void Player::MakeShot(int time)
 {
 	// TODO Check _currentWeapon
@@ -228,7 +230,7 @@ bool Player::IsHit(Asteroid* ast)
 	return false;
 }
 
-//
+//checks if the ship collided with asteroid
 bool Player::IsDamagedByAst(Asteroid* ast)
 {
 	float enemyX = ast->GetX();

@@ -13,8 +13,9 @@
 #include "GameController.h"
 
 // 
-// 
-// 
+// name variebles for the game
+// Game Class
+
 class Game
 {
 public:

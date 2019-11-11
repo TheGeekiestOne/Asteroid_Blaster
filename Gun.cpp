@@ -10,6 +10,8 @@
 #include "Gun.h"
 #include "Common.h"
 
+//produces the gun, effects of the gun, and how to fire it, direction 
+
 Gun::Gun()
 {
 	for (int i = 0; i < MAX_BULLETS; i++)
@@ -72,7 +74,7 @@ void Gun::MakeShot(int time, Position playerPosition)
 	}
 }
 
-//
+//size and visible value to the bullet
 int Gun::_GetBulletToShow()
 {
 	size_t count = _bullets.size();

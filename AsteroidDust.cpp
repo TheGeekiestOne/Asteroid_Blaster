@@ -29,7 +29,7 @@ AsteroidDust::~AsteroidDust()
 }
 
 
-// 
+// Draws the particles
 void AsteroidDust::Draw()
 {
 	glBegin(GL_POINTS);
@@ -41,7 +41,7 @@ void AsteroidDust::Draw()
 	glEnd();
 }
 
-// 
+// Keeps and stores the locatiosn of the particles
 void AsteroidDust::Update(int time, int delta)
 {
 	delta = time - _lastTime;
@@ -72,7 +72,7 @@ void AsteroidDust::Update(int time, int delta)
 	_lastTime = time;
 }
 
-//
+//assign radius value to the dust orign from centre of the the asteroid
 float AsteroidDust::GetOuterRadius()
 {
 	return 1;

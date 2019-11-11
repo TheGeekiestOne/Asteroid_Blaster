@@ -15,7 +15,7 @@
 #include "Asteroid.h"
 
 /// 
-/// 
+/// Player logic and functions names
 /// 
 class Player : public GraphicObject
 {

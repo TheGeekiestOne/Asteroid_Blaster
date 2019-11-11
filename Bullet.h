@@ -10,8 +10,10 @@
 ******                      ******
 **********************************/
 
+//Class for the bullet fired by the ship
 struct Bullet
 {
+	//constant varialble names 
 	bool inuse;
 
 	float x;

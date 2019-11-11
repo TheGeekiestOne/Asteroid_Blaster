@@ -10,6 +10,7 @@
 ******                      ******
 **********************************/
 
+//declare 2D space
 struct Vertex
 {
 	float x;

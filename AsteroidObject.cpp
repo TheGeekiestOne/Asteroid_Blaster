@@ -9,7 +9,8 @@
 #include "AsteroidObject.h"
 #include "Common.h"
 
-//
+//generates the random location and sizes of the asteroid to the game screen
+
 AsteroidObject::AsteroidObject()
 {
 	_angle = 0;

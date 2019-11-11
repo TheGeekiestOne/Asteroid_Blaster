@@ -11,7 +11,7 @@
 
 
 // 
-// Base ast object with necessary common functions and fields.
+// Base asteroid object with necessary common functions and fields.
 // 
 class AsteroidObject
 {

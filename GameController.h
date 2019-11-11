@@ -17,6 +17,7 @@
 #include "Score.h"
 
 // Manage all the game resources and logic.
+
 class GameController
 {
 public:
@@ -70,10 +71,11 @@ private:
 	int _enemyAppearInterval;
 	int _lastAppearTime;
 
-	// States control.
+	// control of states.
 	bool _isInitialState;
 	bool _isGameState;
 
+	// name score
 	Statistics _statistics;
 
 	// Collection of dust (ast trash) objects.

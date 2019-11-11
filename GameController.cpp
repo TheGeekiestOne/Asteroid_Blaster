@@ -16,12 +16,16 @@
 #include <iostream>
 #include <sstream>
 
+//Constructor to give the controller value on moving objects
+
+
 int myrandom(int m) {
 
 	return rand() % m;
 
 }
 
+//popup menu on right click of the mouse, using the above function to random the the value 
 void menu1(GLint id)
 {
 	if (id == 1)

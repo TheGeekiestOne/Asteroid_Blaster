@@ -24,7 +24,7 @@ Game* Game::_pInstance = 0;
 
 
 /// 
-/// 
+/// Main game function to call everything in initiate the game instance
 /// 
 Game::Game(int windowNumber)
 {
@@ -74,7 +74,7 @@ bool Game::NewGame(int argc, char** argv)
 }
 
 /// 
-/// 
+/// Window size and titles
 /// 
 int Game::_InitDisplay(int argc, char** argv)
 {
@@ -120,7 +120,7 @@ void Game::_InitHandlers()
 }
 
 /// 
-/// 
+/// Checks to see if the game finished - Not working
 /// 
 bool Game::IsGameFinished()
 {
@@ -133,7 +133,7 @@ bool Game::IsGameFinished()
 }
 
 /// 
-/// 
+/// this should pause the game, but not working
 /// 
 bool Game::HaltGame()
 {

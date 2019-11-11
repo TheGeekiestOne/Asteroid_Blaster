@@ -9,6 +9,7 @@
 **           11/2019            **
 ******                      ******
 **********************************/
+//name calls for score/statistics
 
 struct Statistics
 {

@@ -16,6 +16,9 @@
 #include "AsteroidObject.h"
 #include "Position.h"
 
+//Asteroid class
+
+
 class Asteroid : public AsteroidObject, public GraphicObject
 {
 public:

@@ -8,6 +8,7 @@
 **           11/2019            **
 ******                      ******
 **********************************/
+//location calls  and variAbles
 
 struct Position
 {

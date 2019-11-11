@@ -10,6 +10,8 @@
 ******                      ******
 **********************************/
 
+//Comman library files, more convienant than adding it to each class/code
+
 #include<ctime>
 #include <stdlib.h>
 #include <math.h>

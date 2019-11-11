@@ -8,6 +8,7 @@
 **           11/2019            **
 ******                      ******
 **********************************/
+//Constant variebles for calculations and strings to call from
 
 #include <string>
 

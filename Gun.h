@@ -17,7 +17,7 @@
 #include "Asteroid.h"
 
 /// 
-/// 
+/// class for the Gun, which calls the bullet to the ship
 /// 
 class Gun : public GraphicObject
 {
@@ -29,7 +29,9 @@ public:
 	bool IsDamagedByBullets(Asteroid* ast);
 
 private:
+	//get bullet
 	int _GetBulletToShow(void);
+	//initiate the bullet on fire
 	void _InitBullet(int i, int time, Position playerPosition);
 
 	std::vector<Bullet> _bullets;

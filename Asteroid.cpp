@@ -11,6 +11,7 @@
 #include <iostream>
 #include <fstream>
 
+//This is where the asteroid is called and logic is done
 Asteroid::Asteroid(float playerX, float playerY)
 {
 	_isPiece = false;
