@@ -231,7 +231,7 @@ void GameController::Display()
 	glutSwapBuffers();
 }
 
-// Solves all collisions between player, asteroids and rockets.
+// Solves all collisions between player, asteroids and bullets.
 void GameController::_SolveCollisions()
 {
 	int size = _asteroids.size();
@@ -251,7 +251,7 @@ void GameController::_SolveCollisions()
 		// Asteroids with asteroids
 		// It was not implemented in the actual Asteroids. So I don't know if need this.
 
-		// Split ast to pieces.
+		// Split asteroid to pieces.
 		if (isHit || isPlayerDamaged)
 		{
 			std::vector<Asteroid*> result = ast->SplitToPieces();
@@ -270,6 +270,7 @@ void GameController::_SolveCollisions()
 			// Set player killed.
 			if (_statistics.LivesCount == 0)
 			{
+				_ShowInitialScreen();
 			}
 			else
 			{
@@ -428,21 +429,23 @@ void GameController::_ShowStatistics()
 	stringStream << LEVEL_LABEL << _statistics.CurrentLevel;
 	std::string levelValue = stringStream.str();
 
-	glRasterPos2i(1, ORTHO_MAX - 6);
+	//level not implimented
+	/*glRasterPos2i(1, ORTHO_MAX - 6);
 	for (size_t i = 0; i < levelValue.length(); i++)
 	{
 		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, (int)levelValue[i]);
-	}
+	}*/
 
 	stringStream.str(std::string());
 	stringStream << _statistics.LivesCount << LIVES_LABEL;
 	std::string livesValue = stringStream.str();
 
-	glRasterPos2i(ORTHO_MAX - 2 * livesValue.length(), ORTHO_MAX - 3);
-	for (size_t i = 0; i < livesValue.length(); i++)
-	{
-		glutBitmapCharacter(GLUT_BITMAP_9_BY_15, (int)livesValue[i]);
-	}
+	//lives not working
+	//glRasterPos2i(ORTHO_MAX - 2 * livesValue.length(), ORTHO_MAX - 3);
+	//for (size_t i = 0; i < livesValue.length(); i++)
+	//{
+	//	glutBitmapCharacter(GLUT_BITMAP_9_BY_15, (int)livesValue[i]);
+	//}
 
 
 }
