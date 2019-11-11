@@ -269,7 +269,7 @@ void GameController::_SolveCollisions()
 		{
 			// Set player killed.
 			if (_statistics.LivesCount == 0)
-			{
+			{//should bounce game back to initialScreen
 				_ShowInitialScreen();
 			}
 			else
