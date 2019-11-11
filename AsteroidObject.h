@@ -17,7 +17,7 @@ class AsteroidObject
 {
 public:
 	AsteroidObject();
-
+	//assign X and Y value - 2D
 	float GetX();
 	float GetY();
 
@@ -31,7 +31,7 @@ protected:
 	float _GetRandomAngle();
 	// 
 	int _GetRandomTypeOfMovement();
-	//
+	//Random number to generate random locations and sizes for asteroids
 	float _GetRandomNumber(int max);
 	// 
 	float _angle;

@@ -61,7 +61,7 @@ private:
 	// Windows.
 	int _originalWindow;
 	int _currentWindow;
-	//
+	//windows cursor
 	int _cursor;
 	// Player data.
 	Player* _player;
