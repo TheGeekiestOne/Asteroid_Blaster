@@ -1,6 +1,14 @@
 #pragma once
 #ifndef __baseenemy_h__
 #define __baseenemy_h__
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
+
 
 // 
 // Base ast object with necessary common functions and fields.

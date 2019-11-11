@@ -1,3 +1,11 @@
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
+
 #include "Asteroid.h"
 #include "Common.h"
 #include <iostream>

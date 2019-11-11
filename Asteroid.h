@@ -2,6 +2,14 @@
 #ifndef __asteroidenemy_h__
 #define __asteroidenemy_h__
 
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
+
 #include <vector>
 #include "Vertex.h"
 #include "GraphicObject.h"

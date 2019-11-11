@@ -1,6 +1,13 @@
 #pragma once
 #ifndef __position_h__
 #define __position_h__
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
 
 struct Position
 {

@@ -2,6 +2,14 @@
 #ifndef __enemydust_h__
 #define __enemydust_h__
 
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
+
 #include "GraphicObject.h"
 #include "AsteroidObject.h"
 

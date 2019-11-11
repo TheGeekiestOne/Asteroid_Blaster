@@ -2,6 +2,14 @@
 #ifndef __statistics_h__
 #define __statistics_h__
 
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
+
 struct Statistics
 {
 	int LivesCount;

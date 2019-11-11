@@ -2,6 +2,14 @@
 #ifndef __machinegun_h__
 #define __machinegun_h__
 
+/*********************************
+******     Copyright (c)    ******
+***        Ayran Olckers       ***
+**           W1654684           **
+**           11/2019            **
+******                      ******
+**********************************/
+
 #include <vector>
 #include "Bullet.h"
 #include "GraphicObject.h"
