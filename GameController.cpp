@@ -296,7 +296,7 @@ void GameController::_ShowInitialScreen()
 	glColor3f(1.0, 1.0, 1.0);
 	//const char* text = "ASTEROIasdasd23DS";
 	glRasterPos2i(ORTHO_MAX / 2 - 18, ORTHO_MAX / 2 - 18);
-	for (size_t i = 0; i < GAME_AUTHOR.length(); i++)
+	for (size_t i = 0; i < GAME_CONTROL1.length(); i++)
 	{
 		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, (int)GAME_CONTROL1[i]);
 
@@ -305,7 +305,7 @@ void GameController::_ShowInitialScreen()
 	glColor3f(1.0, 1.0, 1.0);
 	//const char* text = "ASTEROIasdasd23DS";
 	glRasterPos2i(ORTHO_MAX / 2 - 18, ORTHO_MAX / 2 - 21);
-	for (size_t i = 0; i < GAME_AUTHOR.length(); i++)
+	for (size_t i = 0; i < GAME_CONTROL2.length(); i++)
 	{
 		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, (int)GAME_CONTROL2[i]);
 
@@ -314,7 +314,7 @@ void GameController::_ShowInitialScreen()
 	glColor3f(1.0, 1.0, 1.0);
 	//const char* text = "ASTEROIasdasd23DS";
 	glRasterPos2i(ORTHO_MAX / 2 - 18, ORTHO_MAX / 2 - 24);
-	for (size_t i = 0; i < GAME_AUTHOR.length(); i++) 
+	for (size_t i = 0; i < GAME_CONTROL3.length(); i++) 
 	{
 		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, (int)GAME_CONTROL3[i]);
 
