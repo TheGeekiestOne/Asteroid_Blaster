@@ -13,6 +13,11 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
+//Asteroids is a space - themed multidirectional shooter arcade game 
+//designed by Lyle Rains, Ed Logg, and Dominic Walshand released in 
+//November 1979 by Atari, Inc.The player controls a single spaceship 
+//in an asteroid field which is periodically traversed by flying saucers
+
 #include <string.h>
 #include "Game.h"
 #include "Common.h"
@@ -20,7 +25,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 /// 
 /// 
 /// 
-Game* Game::_pInstance = 0;
+Game* Game::_playerInstance = 0;
 
 
 /// 
@@ -28,7 +33,7 @@ Game* Game::_pInstance = 0;
 /// 
 Game::Game(int windowNumber)
 {
-	_pController = new GameController(windowNumber);
+	_playerController = new GameController(windowNumber);
 
 
 
@@ -39,10 +44,10 @@ Game::Game(int windowNumber)
 /// 
 Game::~Game()
 {
-	if (_pController != 0)
+	if (_playerController != 0)
 	{
-		delete _pController;
-		_pController = 0;
+		delete _playerController;
+		_playerController = 0;
 	}
 }
 
@@ -52,17 +57,17 @@ Game::~Game()
 bool Game::NewGame(int argc, char** argv)
 {
 	// Don't let halt current Game. Only if user knows what he does by hald_Game().
-	if (_pInstance == 0 && IsGameFinished())
+	if (_playerInstance == 0 && IsGameFinished())
 	{
-		_pInstance = new Game(_InitDisplay(argc, argv));
+		_playerInstance = new Game(_InitDisplay(argc, argv));
 
-		bool result = _pInstance != 0;
+		bool result = _playerInstance != 0;
 
 		if (result)
 		{
 			_InitHandlers();
 
-			_pInstance->_pController->Initialize();
+			_playerInstance->_playerController->Initialize();
 		}
 
 		return result;
@@ -124,9 +129,9 @@ void Game::_InitHandlers()
 /// 
 bool Game::IsGameFinished()
 {
-	if (_pInstance != 0 && _pInstance->_pController != 0)
+	if (_playerInstance != 0 && _playerInstance->_playerController != 0)
 	{
-		return !_pInstance->_pController->IsInitialized();
+		return !_playerInstance->_playerController->IsInitialized();
 	}
 
 	return true;
@@ -137,12 +142,12 @@ bool Game::IsGameFinished()
 /// 
 bool Game::HaltGame()
 {
-	bool result = _pInstance != 0;
+	bool result = _playerInstance != 0;
 
 	if (result)
 	{
-		delete _pInstance;
-		_pInstance = 0;
+		delete _playerInstance;
+		_playerInstance = 0;
 	}
 
 	return result;
@@ -153,7 +158,7 @@ bool Game::HaltGame()
 /// 
 void Game::KeyPressed(unsigned char key, int px, int py)
 {
-	_pInstance->_pController->KeyPressed(key, px, py);
+	_playerInstance->_playerController->KeyPressed(key, px, py);
 }
 
 /// 
@@ -161,7 +166,7 @@ void Game::KeyPressed(unsigned char key, int px, int py)
 /// 
 void Game::SpecialKeyPressed(int key, int x, int y)
 {
-	_pInstance->_pController->SpecialKeyPressed(key, x, y);
+	_playerInstance->_playerController->SpecialKeyPressed(key, x, y);
 }
 
 /// 
@@ -169,7 +174,7 @@ void Game::SpecialKeyPressed(int key, int x, int y)
 /// 
 void Game::SpecialKeyUpPressed(int key, int x, int y)
 {
-	_pInstance->_pController->SpecialKeyUpPressed(key, x, y);
+	_playerInstance->_playerController->SpecialKeyUpPressed(key, x, y);
 }
 
 
@@ -179,7 +184,7 @@ void Game::SpecialKeyUpPressed(int key, int x, int y)
 /// 
 void Game::Display()
 {
-	_pInstance->_pController->Display();
+	_playerInstance->_playerController->Display();
 
 	
 }
@@ -191,7 +196,7 @@ void Game::Display()
 /// 
 void Game::Update()
 {
-	_pInstance->_pController->Update();
+	_playerInstance->_playerController->Update();
 	 
 
 }

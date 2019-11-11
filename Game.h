@@ -53,9 +53,9 @@ private:
 	static void _InitHandlers();
 
 	//
-	static Game* _pInstance;
+	static Game* _playerInstance;
 	//
-	GameController *_pController;
+	GameController *_playerController;
 };
 
 #endif /* __game_h__ */
