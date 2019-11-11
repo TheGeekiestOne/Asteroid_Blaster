@@ -56,7 +56,7 @@ void menu1(GLint id)
 	}
 	else if (id == 3)
 	{
-
+		glColor3f(1.0, 1.0, 1.0);
 	}
 	else
 	{
