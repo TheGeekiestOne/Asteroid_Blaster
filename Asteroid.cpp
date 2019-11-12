@@ -27,20 +27,12 @@ Asteroid::Asteroid(float playerX, float playerY)
 		_deltaX = ORTHO_MAX_D / 2; // center of the screen
 		_deltaY = ORTHO_MAX_D / 2;
 	}
-	else if (_movementType == 1)
-	{
-		_deltaX = ORTHO_MAX_D / 3; // not a center of the screen
-		_deltaY = ORTHO_MAX_D / 3;
-	}
-	else
-	{
-		_deltaX = playerX; // player position
-		_deltaY = playerX;
-	}
+
 
 	// Initial position of the ast.
-	_x = _deltaX + _distance * cos(_angle * M_PI / 180);
-	_y = _deltaY + _distance * sin(_angle * M_PI / 180);
+
+	_x =  0;
+	_y =  0;
 	_pieceAngle = 0;
 	_radius = DEFAULT_ASTEROID_RADIUS;
 
