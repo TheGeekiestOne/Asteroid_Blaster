@@ -30,6 +30,11 @@ void menu1(GLint id)
 {
 	if (id == 1)
 	{
+		////sources from https://www.gamedev.net/forums/topic/629139-random-glclearcolor-values/ 
+		//It's also possible that glClearColor expects floats clamped to 1.0, in which case it's 
+		//	highly likely you're always getting white since rand()%256 will usually be nonzero. 
+		//	Try dividing the results of that calculation by 255.0f to find out. (Or check the documentation... 
+		//		either way, don't mix clamped floats and integer formats.) Edited August 5, 2012 by jouley
 		glClearColor((double)myrandom(255) / 255, (double)myrandom(255) / 255, (double)myrandom(255) / 255, (double)myrandom(255) / 255);
 		glutPostRedisplay();
 	}
